@@ -10,7 +10,6 @@ router.post('/', (req, res) => {
     });
 });
 
-// Obtener todas las reservas
 router.get('/', (req, res) => {
     Reserva.obtenerReservas((err, result) => {
         if (err) return res.status(500).send(err);
